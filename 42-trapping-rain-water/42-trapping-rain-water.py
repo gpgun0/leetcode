@@ -9,24 +9,25 @@ class Solution:
                 idx = i
         
         result = 0
-        stack = []
+        std = -1
         for i in range(idx):
-            if not stack:
-                stack.append(height[i])
+            if std == -1:
+                std = height[i]
             
-            elif stack[-1] >= height[i]:
-                result += stack[-1]-height[i]
-            elif stack[-1] < height[i]:
-                stack.append(height[i])
+            elif std >= height[i]:
+                result += std-height[i]
+            elif std < height[i]:
+                std = height[i]
         
-        stack = []
+        std = -1
         for i in range(len(height)-1, idx, -1):    
-            if not stack:
-                stack.append(height[i])
             
-            elif stack[-1] >= height[i]:
-                result += stack[-1]-height[i]
-            elif stack[-1] < height[i]:
-                stack.append(height[i])
-        
+            if std == -1:
+                std = height[i]
+            
+            elif std >= height[i]:
+                result += std-height[i]
+            elif std < height[i]:
+                std = height[i]
+                
         return result
