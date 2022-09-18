@@ -11,16 +11,22 @@ class Solution:
         result = 0
         std = -1
         for i in range(idx):
-            if std < height[i]:
+            if std == -1:
                 std = height[i]
+            
             elif std >= height[i]:
                 result += std-height[i]
+            elif std < height[i]:
+                std = height[i]
         
         std = -1
         for i in range(len(height)-1, idx, -1):    
-            if std < height[i]:
-                std = height[i]            
+            if std == -1:
+                std = height[i]
+            
             elif std >= height[i]:
                 result += std-height[i]
+            elif std < height[i]:
+                std = height[i]
                 
         return result
