@@ -7,12 +7,12 @@ class Solution:
             path = pathAndFiles[0]
             
             for file in pathAndFiles[1:]:
-                content = file.split("(")[1]
-                if content in map_:
-                    map_[content].append(path + "/" + file.split("(")[0])
-                else:
+                fileName, content = file.split("(")
+                
+                if not content in map_:
                     map_[content] = []
-                    map_[content].append(path + "/" + file.split("(")[0])
+                    
+                map_[content].append(path + "/" + fileName)
         
         result = []
         for k in map_:
