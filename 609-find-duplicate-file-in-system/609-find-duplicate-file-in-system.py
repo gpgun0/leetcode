@@ -8,7 +8,6 @@ class Solution:
             
             for file in pathAndFiles[1:]:
                 fileName, content = file.split("(")
-                
                 if not content in map_:
                     map_[content] = []
                     
