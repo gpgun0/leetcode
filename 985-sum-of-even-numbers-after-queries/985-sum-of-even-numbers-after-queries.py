@@ -5,21 +5,22 @@ class Solution:
             if num%2 == 0:
                 sum_ += num
         
-        
         answer = []
         for query in queries:
+            prev_ = nums[query[1]]
+            next_ = nums[query[1]] + query[0]
             
-            if (nums[query[1]] + query[0])%2 == 1:
-                if nums[query[1]]%2 == 0:
-                    sum_ -= nums[query[1]]
+            if next_%2 == 1:
+                if prev_%2 == 0:
+                    sum_ -= prev_
             
-            elif (nums[query[1]] + query[0])%2 == 0:
+            elif next_%2 == 0:
                 if query[0]%2 == 1:
-                    sum_ += (nums[query[1]] + query[0])
+                    sum_ += (prev_ + query[0])
                 elif query[0]%2 == 0:
                     sum_ += query[0]
             answer.append(sum_)
             
-            nums[query[1]] = nums[query[1]] + query[0]
+            nums[query[1]] = next_
         
         return answer
