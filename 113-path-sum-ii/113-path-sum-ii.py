@@ -10,7 +10,8 @@ class Solution:
         
         def dfs(cur, path):
             if not cur:
-                return 
+                return
+            
             copied = path.copy()
             copied.append(cur.val)
             
@@ -19,10 +20,8 @@ class Solution:
                     answer.append(copied)
                 return
             
-            if cur.left:
-                dfs(cur.left, copied)
-            if cur.right:
-                dfs(cur.right, copied)
+            dfs(cur.left, copied)
+            dfs(cur.right, copied)
 
             
         dfs(root, [])
