@@ -9,20 +9,21 @@ class Solution:
         answer = []
         
         def dfs(cur, path):
-            copied = path.copy()
             if not cur:
-                return
-            
-            copied.append(cur.val) 
-          
-            dfs(cur.left, copied)
-            dfs(cur.right, copied)
+                return 
+            copied = path.copy()
+            copied.append(cur.val)
             
             if not cur.left and not cur.right:
-                
                 if sum(copied) == targetSum:
                     answer.append(copied)
-                return              
+                return
+            
+            if cur.left:
+                dfs(cur.left, copied)
+            if cur.right:
+                dfs(cur.right, copied)
+
             
         dfs(root, [])
         
