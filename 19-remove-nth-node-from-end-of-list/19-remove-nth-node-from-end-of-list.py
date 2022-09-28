@@ -12,9 +12,6 @@ class Solution:
             len_ += 1
             temp = temp.next
         
-        if len_ == 1:
-            return head.next
-        
         if len_ - n == 0:
             return head.next
             
