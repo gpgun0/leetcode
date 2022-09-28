@@ -12,11 +12,11 @@ class Solution:
             len_ += 1
             temp = temp.next
         
-        if len_ - n == 0:
+        if len_-n == 0:
             return head.next
             
         x = head
-        for i in range(max(0, len_ - n - 1)):
+        for i in range(len_-n-1):
             x = x.next
         
         x.next = x.next.next
