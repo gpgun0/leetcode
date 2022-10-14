@@ -9,20 +9,17 @@ class Solution:
         if head.next == None:
             return None;
         
-        h = head
-        small = head
-        fast = head
+        answer = small = fast = head
         
         while True:
-            
             if fast.next.next == None:
                 small.next = small.next.next
-                return head
+                return answer
             
             fast = fast.next.next
             if fast.next == None:
                 small.next = small.next.next
-                return head
+                return answer
         
             small = small.next
             
