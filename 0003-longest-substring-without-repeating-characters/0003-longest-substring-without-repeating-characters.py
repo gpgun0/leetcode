@@ -1,27 +1,15 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        table = {}
         result = 0
-        l = len(s)
-        if l == 0:
-            return 0
+        start = 0
 
-        table = defaultdict(int)
-        
-        si = ei = 0
-        table[s[si]] = 1
-        
-
-        while ei < l:
-            for i in range(si, ei+1):
-                if table[s[i]] > 1:
-                    table[s[si]] -= 1
-                    si += 1
-                    break
-            
+        for index, char in enumerate(s):
+            if char in table and table[char] >= start:
+                start = table[char] + 1
+                
             else:
-                result = max(result, ei-si+1)
-                ei += 1
-                if ei < l:
-                    table[s[ei]] += 1
+                result = max(result, index - start + 1)
+            table[char] = index
         
         return result
