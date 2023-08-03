@@ -1,14 +1,30 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        result = ""
         n = len(s)
-        result = s[0]
         
-        for diff in range(1, n):
-            for si in range(0, n-diff):
-                str_ = s[si:si+diff+1]
-                # print(s[si:si+diff+1], ": ", s[si:si+diff+1], end="")
-                if str_ == str_[::-1]:
-                    result = str_
+        def expand(left, right):
+            
+            while left >= 0 and right < n:
+                if s[left] == s[right]:
+                    left -= 1
+                    right += 1
+                else:
                     break
+            
+            return [left+1, right-1]
         
+        for i in range(n):
+            left, right = expand(i, i)
+            diff = right - left + 1
+            
+            if diff > len(result):
+                result = s[left:right+1]
+            
+            left, right = expand(i, i+1)
+            diff = right - left + 1
+            
+            if diff > len(result):
+                result = s[left:right+1]
+            
         return result
