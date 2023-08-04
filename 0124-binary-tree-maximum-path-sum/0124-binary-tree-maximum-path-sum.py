@@ -6,19 +6,16 @@
 #         self.right = right
 class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
-        
         result = [-1000]
         
         def recursion(node, result):
             
-            left = recursion(node.left, result) if node.left else 0
-            right = recursion(node.right, result) if node.right else 0
+            left = max(recursion(node.left, result), 0) if node.left else 0
+            right = max(recursion(node.right, result), 0) if node.right else 0
             
+            result[0] = max(result[0], left + right + node.val)
             
-            result[0] = max(result[0], max(left, 0) + max(right, 0) + node.val)
-            
-            return max(max(left, right) + node.val, node.val)
-        
+            return max(left, right) + node.val
         
         value = recursion(root, result)
         
