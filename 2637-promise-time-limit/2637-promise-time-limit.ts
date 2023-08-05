@@ -8,7 +8,7 @@ function timeLimit(fn: Fn, t: number): Fn {
             }, t)
         })
         
-        return Promise.race([fn.bind(null, ...args)(), p]);
+        return Promise.race([fn.call(null, ...args), p]);
     }
 };
 
