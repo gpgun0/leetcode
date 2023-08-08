@@ -8,12 +8,13 @@ class Solution:
         while left <= right:
             mid = (left + right) // 2
 
-            if nums[mid] <= nums[-1]:
-                right = mid - 1
-            else:
+            if nums[mid] > nums[-1]:
                 left = mid + 1
+            else:
+                right = mid - 1
         
-        # left -> 가장 작은 값
+        # left -> 가장 작은 값의 index
+
 
         def binary_search(left, right, target):
 
@@ -23,18 +24,15 @@ class Solution:
                 if nums[mid] == target:
                     return mid
                 elif nums[mid] < target:
-                    left += 1
+                    left = mid + 1
                 else:
-                    right -= 1
+                    right = mid - 1
             
             return -1
         
-        result = binary_search(0, left - 1, target)
+        result = binary_search(0, left-1, target)
 
         if result != -1:
             return result
-
-        return binary_search(left, l - 1, target)
-
-
-
+        
+        return binary_search(left, l-1, target)
