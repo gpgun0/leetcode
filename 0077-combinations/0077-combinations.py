@@ -4,17 +4,14 @@ class Solution:
 
         def dfs(idx, comb):
             if len(comb) == k:
-                copied = comb.copy()
-                result.append(copied)
+                result.append(comb[:])
                 return
             
             for i in range(idx, n+1):
                 comb.append(i)
-
                 dfs(i+1, comb)
-
                 comb.pop()
             
         dfs(1, [])
-
+        
         return result
