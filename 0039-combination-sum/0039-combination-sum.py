@@ -3,17 +3,15 @@ class Solution:
         result = []
         n = len(candidates)
 
-        def dfs(start, candidates, path):
+        def dfs(start, path):
             if sum(path) > target:
                 return
             if sum(path) == target:
                 result.append(path[:])
             
             for i in range(start, n):
-                path.append(candidates[i])
-                dfs(i, candidates, path)
-                path.pop()
+                dfs(i, path + [candidates[i]])
         
-        dfs(0, candidates, [])
+        dfs(0, [])
 
         return result
