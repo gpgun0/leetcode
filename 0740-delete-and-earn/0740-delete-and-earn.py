@@ -1,16 +1,16 @@
 class Solution:
     def deleteAndEarn(self, nums: List[int]) -> int:
-        n = max(nums)
-        arr = [0]*(n+1)
-        dp = [0]*(n+1)
-
-        for num in sorted(nums):
-            arr[num] += num
+        dic = defaultdict(int)
+        dp = [0]*(max(nums)+1)
+        
+        for num in nums:
+            dic[num] += 1
         
         for i in range(1, len(dp)):
             if i == 1:
-                dp[i] = arr[i]
+                dp[i] = dic[1] * 1
+            
             else:
-                dp[i] = max(dp[i-1], arr[i] + dp[i-2])
+                dp[i] = max(dp[i-1], dic[i]*i + dp[i-2])
         
-        return max(dp)
+        return dp[-1]
