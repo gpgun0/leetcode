@@ -14,6 +14,6 @@ class Solution:
                 else:
                     cur[j] = max(cur[j-1], pre[j])
 
-            pre, cur = cur, pre
+            pre = cur[:]
         
         return pre[-1]
