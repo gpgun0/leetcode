@@ -5,12 +5,9 @@ class Solution:
         dp = [False]*l
 
         for i in range(l):
-            if s[:i+1] in wordDict:
-                dp[i] = True
-
-        for i in range(1, l):
-            for k in range(i):
-                if dp[k] and s[k+1:i+1] in wordDict:
-                    dp[i] = True
-
+            for word in wordDict:
+                if i >= len(word) - 1 and (i == len(word) -1 or dp[i-len(word)]):
+                    if s[i-len(word)+1:i+1] == word:
+                        dp[i] = True
+        
         return dp[-1]
