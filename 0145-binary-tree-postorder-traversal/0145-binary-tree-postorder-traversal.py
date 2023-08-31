@@ -13,11 +13,9 @@ class Solution:
             node = stack.pop()
             if not node:
                 continue
+
             answer.append(node.val)
-            
-            if node.left:
-                stack.append(node.left)
-            if node.right:
-                stack.append(node.right)
+            stack.append(node.left)
+            stack.append(node.right)
 
         return answer[::-1]
