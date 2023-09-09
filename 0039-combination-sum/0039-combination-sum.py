@@ -8,6 +8,7 @@ class Solution:
                 return
             if sum(path) == target:
                 result.append(path[:])
+                return
             
             for i in range(start, n):
                 dfs(i, path + [candidates[i]])
