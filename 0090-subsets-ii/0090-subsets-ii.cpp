@@ -1,40 +1,23 @@
 class Solution {
 public:
-    vector<vector<int>> answer;
-    map<int, int> counter;
-    vector<vector<int>> counterList;
-    vector<int> path;
-
-    void dfs(vector<int> path, vector<int>& nums, int start) {
-        answer.push_back(path);
-        
-        for (int i=start; i<counterList.size(); i++) {
-           vector<int> entry = counterList[i];
-           int value = entry[0], count = entry[1];
-
-           if (count <= 0) {
-               continue;
-           }
-
-            counterList[i] = {value, count-1};
-            path.push_back(value);
-            dfs(path, nums, i);
-            path.pop_back();
-            counterList[i] = {value, count};
-        }
-        return;
-    }
+    int startIdx;
+    vector<vector<int>> subsets = {{}};
+    int subsetsSize = 0;
 
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        for (int num: nums) {
-            counter[num]++;
+        sort(nums.begin(), nums.end());
+
+        for (int i=0; i<nums.size(); i++) {
+            startIdx = (i>0 && nums[i] == nums[i-1]) ? subsetsSize : 0;
+            subsetsSize = subsets.size();
+
+            for (int j=startIdx; j<subsetsSize; j++) {
+                vector<int> newSubset = subsets[j];
+                newSubset.push_back(nums[i]);
+                subsets.push_back(newSubset);
+            }
         }
 
-        for (auto& [key, value]: counter) {
-            counterList.push_back({key, value});
-        }
-
-        dfs(vector<int>(), nums, 0);
-        return answer;
+        return subsets;
     }
 };
