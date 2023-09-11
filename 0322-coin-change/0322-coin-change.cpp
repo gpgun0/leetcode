@@ -2,17 +2,37 @@ class Solution {
 public:
     int n;
     int INF = 1e9;
-    int coinChange(vector<int>& coins, int amount) {
-        n = coins.size();
-        vector<int> dp(amount+1, INF);
-        dp[0] = 0;
+    int answer;
 
-        for (int coin: coins) {
-            for (int i=coin; i<amount+1; i++) {
-                dp[i] = min(dp[i-coin]+1, dp[i]);
-            }
+    int dfs(vector<int>& coins, int amount, vector<int>& mem) {
+        int min_cost = INF;
+
+        if (amount == 0) {
+            return 0;
         }
 
-        return dp[amount] == INF ? -1 : dp[amount];
+        if (mem[amount]) {
+            return mem[amount];
+        }
+
+        for (int coin: coins) {
+            if (amount-coin < 0) {
+                continue;
+            }
+            
+            min_cost = min(dfs(coins, amount-coin, mem)+1, min_cost);
+        }
+
+        mem[amount] = min_cost;
+        return mem[amount];
+    }
+
+
+    int coinChange(vector<int>& coins, int amount) {
+        n = coins.size();
+        vector<int> mem(amount+1, 0);
+        answer = dfs(coins, amount, mem);
+
+        return answer == INF ? -1 : answer;
     }
 };
