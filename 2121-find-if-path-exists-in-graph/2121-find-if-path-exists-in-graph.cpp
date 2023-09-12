@@ -1,8 +1,24 @@
 class Solution {
 public:
+    bool dfs(map<int, vector<int>>& graph, vector<bool>& seen, int curNode, int destination) {
+        if (curNode == destination) {
+            return true;
+        }
+        if (seen[curNode]) {
+            return false;
+        }
+
+        seen[curNode] = true;
+        for (auto nextNode: graph[curNode]) {
+            if (dfs(graph, seen, nextNode, destination)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
     bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
         map<int, vector<int>> graph;
-        queue<int> q;
         vector<bool> seen(n);
 
         for (auto edge: edges) {
@@ -10,24 +26,7 @@ public:
             graph[u].push_back(v);
             graph[v].push_back(u);
         }
-        seen[source] = true;
-        q.push(source);
 
-        while (!q.empty()) {
-            int curNode = q.front();
-            q.pop();
-
-            if (curNode == destination) {
-                return true;
-            }
-            for (auto nextNode: graph[curNode]) {
-                if (!seen[nextNode]) {
-                    seen[nextNode] = true;
-                    q.push(nextNode);
-                }
-            }
-        }
-
-        return false;
+        return dfs(graph, seen, source, destination);
     }
 };
