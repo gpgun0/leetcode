@@ -4,27 +4,13 @@ public:
     vector<int> answer = {0};
     set<int> seen;
 
-    int getOnCount() {
-        int count = 0;
-        for (auto iter=bitsMap.begin(); iter!=bitsMap.end(); iter++) {
-            if (iter->second) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
     bool backtrack(int num, int n) {
         if (num < 0 || num >= pow(2, n)) {
             return false;
         }
 
         if (answer.size() == pow(2, n)) {
-            // if (getOnCount() == 1) {
-                return true;
-            // }
-            // return false;
+            return true;
         }
 
         int nextNum = 0;
