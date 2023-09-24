@@ -21,10 +21,10 @@ public:
         }
 
         if (answer.size() == pow(2, n)) {
-            if (getOnCount() == 1) {
+            // if (getOnCount() == 1) {
                 return true;
-            }
-            return false;
+            // }
+            // return false;
         }
 
         int nextNum = 0;
@@ -32,19 +32,14 @@ public:
 
         for (int i=0; i<n; i++) {
             if (bitsMap[pow(2, i)]) {
-                bitsMap[pow(2, i)] = 0;
                 nextNum = num - pow(2, i);
             } else {
-                bitsMap[pow(2, i)] = 1;
                 nextNum = num + pow(2, i);
             }
+            bitsMap[pow(2, i)] ^= 1;
 
             if (seen.count(nextNum)) {
-                if (bitsMap[pow(2, i)]) {
-                    bitsMap[pow(2, i)] = 0;
-                } else {
-                    bitsMap[pow(2, i)] = 1;
-                }
+                bitsMap[pow(2, i)] ^= 1;
                 continue;
             }
 
@@ -59,11 +54,7 @@ public:
             answer.pop_back();
             seen.erase(nextNum);
 
-            if (bitsMap[pow(2, i)]) {
-                bitsMap[pow(2, i)] = 0;
-            } else {
-                bitsMap[pow(2, i)] = 1;
-            }
+            bitsMap[pow(2, i)] ^= 1;
         }
 
         return flag;
