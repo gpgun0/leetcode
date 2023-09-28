@@ -1,38 +1,14 @@
 class Solution {
 public:
-    map<int, int> bitsMap;
-    vector<int> answer = {0};
-    set<int> seen;
-
-    bool backtrack(int num, int n) {
-        if (answer.size() == pow(2, n)) {
-            return true;
-        }
-
-        for (int i=0; i<n; i++) {
-            int nextNum = num ^ (1 << i);
-
-            if (seen.count(nextNum)) {
-                continue;
-            }
-
-            seen.insert(nextNum);
-            answer.push_back(nextNum);
-
-            if (backtrack(nextNum, n)) {
-                return true;
-            }
-
-            answer.pop_back();
-            seen.erase(nextNum);
-        }
-
-        return false;
-    }
-
     vector<int> grayCode(int n) {
-        seen.insert(0);
-        backtrack(0, n);
+        vector<int> answer = {0};
+        
+        for (int i=1; i<n+1; i++) {
+            int mask = 1 << (i-1);
+            for (int j=answer.size()-1; j>=0; j--) {
+                answer.push_back(answer[j] | mask);
+            }
+        }
 
         return answer;
     }
