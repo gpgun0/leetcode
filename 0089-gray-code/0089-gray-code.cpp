@@ -5,52 +5,32 @@ public:
     set<int> seen;
 
     bool backtrack(int num, int n) {
-        if (num < 0 || num >= pow(2, n)) {
-            return false;
-        }
-
         if (answer.size() == pow(2, n)) {
             return true;
         }
 
-        int nextNum = 0;
-        bool flag = false;
-
         for (int i=0; i<n; i++) {
-            if (bitsMap[pow(2, i)]) {
-                nextNum = num - pow(2, i);
-            } else {
-                nextNum = num + pow(2, i);
-            }
-            bitsMap[pow(2, i)] ^= 1;
+            int nextNum = num ^ (1 << i);
 
             if (seen.count(nextNum)) {
-                bitsMap[pow(2, i)] ^= 1;
                 continue;
             }
 
             seen.insert(nextNum);
             answer.push_back(nextNum);
 
-            flag = backtrack(nextNum, n);
-            if (flag) {
+            if (backtrack(nextNum, n)) {
                 return true;
             }
 
             answer.pop_back();
             seen.erase(nextNum);
-
-            bitsMap[pow(2, i)] ^= 1;
         }
 
-        return flag;
+        return false;
     }
 
     vector<int> grayCode(int n) {
-        for (int i=0; i<n; i++) {
-            bitsMap[pow(2, i)] = 0;
-        }
-
         seen.insert(0);
         backtrack(0, n);
 
