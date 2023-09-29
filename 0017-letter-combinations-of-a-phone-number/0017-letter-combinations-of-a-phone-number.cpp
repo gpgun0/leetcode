@@ -1,32 +1,26 @@
 class Solution {
 public:
     vector<string> answer;
-    map<char, vector<char>> dict = {
-        {'2', {'a', 'b', 'c'}},
-        {'3', {'d', 'e', 'f'}},
-        {'4', {'g', 'h', 'i'}},
-        {'5', {'j', 'k', 'l'}},
-        {'6', {'m', 'n', 'o'}},
-        {'7', {'p', 'q', 'r', 's'}},
-        {'8', {'t', 'u', 'v'}},
-        {'9', {'w', 'x', 'y', 'z'}}
+    map<char, string> dict = {
+        {'2', "abc"},
+        {'3', "def"},
+        {'4', "ghi"},
+        {'5', "jkl"},
+        {'6', "mno"},
+        {'7', "pqrs"},
+        {'8', "tuv"},
+        {'9', "wxyz"}
     };
 
     void backtrack(string path, string digits, int idx, int n) {
-        if (path.length() == n) {
-            if (path == "") {
-                return;
-            }
+        if (idx == n && path != "") {
             answer.push_back(path);
             return;
         }
 
-        char key = digits[idx];
-
-        for (auto c: dict[key]) {
+        for (auto c: dict[ digits[idx] ]) {
             backtrack(path+c, digits, idx+1, n);
         }
-
         return;
     }
 
