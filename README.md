@@ -13,4 +13,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
+## String
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/gpgun0/leetcode/tree/master/0020-valid-parentheses) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/gpgun0/leetcode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
