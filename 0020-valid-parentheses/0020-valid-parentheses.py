@@ -3,32 +3,22 @@ class Solution:
         stack = []
 
         for char in s:
-            if char == "(":
-                stack.append("(")
-
-            elif char == ")":
+            if char == ")":
                 if not len(stack) or stack[-1] != "(":
                     return False
                 stack.pop()
-            
-            elif char == "{":
-                stack.append("{")
             
             elif char == "}":
                 if not len(stack) or stack[-1] != "{":
                     return False
                 stack.pop()
-            
-            elif char == "[":
-                stack.append("[")
-            
-            else:
+
+            elif char == "]":
                 if not len(stack) or stack[-1] != "[":
                     return False
                 stack.pop()
-
-        if len(stack):
-            return False
-
-        return True
             
+            else:
+                stack.append(char)
+
+        return not stack
