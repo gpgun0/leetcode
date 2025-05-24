@@ -27,10 +27,6 @@ class Solution:
                 else:
                     j = k
                 current_length = k - start + 1
-                answer = max(answer, current_length)
-                print(current_length)
-
-                continue
             
             if s[k] == s[i]:
                 i = k
@@ -39,6 +35,5 @@ class Solution:
                 j = k
             
             answer = max(answer, current_length)
-            print(current_length)
 
         return answer
