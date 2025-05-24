@@ -28,10 +28,10 @@ class Solution:
                     j = k
                 current_length = k - start + 1
             
-            if s[k] == s[i]:
+            elif s[k] == s[i]:
                 i = k
             
-            if s[k] == s[j]:
+            elif s[k] == s[j]:
                 j = k
             
             answer = max(answer, current_length)
