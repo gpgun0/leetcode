@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/gpgun0/leetcode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/gpgun0/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
+| [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
 | [0283-move-zeroes](https://github.com/gpgun0/leetcode/tree/master/0283-move-zeroes) |
 | [1293-three-consecutive-odds](https://github.com/gpgun0/leetcode/tree/master/1293-three-consecutive-odds) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/gpgun0/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
@@ -49,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/gpgun0/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/gpgun0/leetcode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
+| [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/gpgun0/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 ## Sliding Window
 |  |
@@ -59,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/gpgun0/leetcode/tree/master/0015-3sum) |
+| [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
 ## Counting
 |  |
 | ------- |
