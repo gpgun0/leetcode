@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/gpgun0/leetcode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/gpgun0/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
+| [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
 | [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
 | [0283-move-zeroes](https://github.com/gpgun0/leetcode/tree/master/0283-move-zeroes) |
 | [1293-three-consecutive-odds](https://github.com/gpgun0/leetcode/tree/master/1293-three-consecutive-odds) |
@@ -66,4 +67,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/gpgun0/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
 <!---LeetCode Topics End-->
