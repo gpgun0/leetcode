@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
 | [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
+| [0249-group-shifted-strings](https://github.com/gpgun0/leetcode/tree/master/0249-group-shifted-strings) |
 | [0283-move-zeroes](https://github.com/gpgun0/leetcode/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/gpgun0/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [1293-three-consecutive-odds](https://github.com/gpgun0/leetcode/tree/master/1293-three-consecutive-odds) |
@@ -31,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0020-valid-parentheses](https://github.com/gpgun0/leetcode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/gpgun0/leetcode/tree/master/0049-group-anagrams) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/gpgun0/leetcode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
+| [0249-group-shifted-strings](https://github.com/gpgun0/leetcode/tree/master/0249-group-shifted-strings) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/gpgun0/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [3194-find-words-containing-character](https://github.com/gpgun0/leetcode/tree/master/3194-find-words-containing-character) |
 ## Stack
@@ -59,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/gpgun0/leetcode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
 | [0202-happy-number](https://github.com/gpgun0/leetcode/tree/master/0202-happy-number) |
 | [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
+| [0249-group-shifted-strings](https://github.com/gpgun0/leetcode/tree/master/0249-group-shifted-strings) |
 | [0349-intersection-of-two-arrays](https://github.com/gpgun0/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/gpgun0/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 ## Sliding Window
