@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/gpgun0/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/gpgun0/leetcode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/gpgun0/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/gpgun0/leetcode/tree/master/0049-group-anagrams) |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
@@ -57,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/gpgun0/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/gpgun0/leetcode/tree/master/0049-group-anagrams) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/gpgun0/leetcode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
 | [0202-happy-number](https://github.com/gpgun0/leetcode/tree/master/0202-happy-number) |
@@ -92,4 +94,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0202-happy-number](https://github.com/gpgun0/leetcode/tree/master/0202-happy-number) |
+## Matrix
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
 <!---LeetCode Topics End-->
