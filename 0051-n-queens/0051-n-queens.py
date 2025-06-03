@@ -7,7 +7,6 @@ class Solution:
         def checkDiagonal(board, x, y):
             i, j = x+1, y+1
             while i < n and j < n:
-                print(i, j)
                 if board[i][j] == "Q":
                     return False
                 i += 1
