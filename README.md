@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0026-remove-duplicates-from-sorted-array](https://github.com/gpgun0/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/gpgun0/leetcode/tree/master/0049-group-anagrams) |
+| [0051-n-queens](https://github.com/gpgun0/leetcode/tree/master/0051-n-queens) |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
 | [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
@@ -98,4 +99,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
+## Backtracking
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/gpgun0/leetcode/tree/master/0051-n-queens) |
 <!---LeetCode Topics End-->
