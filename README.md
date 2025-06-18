@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/gpgun0/leetcode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/gpgun0/leetcode/tree/master/0051-n-queens) |
+| [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
 | [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
@@ -33,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0003-longest-substring-without-repeating-characters](https://github.com/gpgun0/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/gpgun0/leetcode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/gpgun0/leetcode/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/gpgun0/leetcode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
 | [0249-group-shifted-strings](https://github.com/gpgun0/leetcode/tree/master/0249-group-shifted-strings) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/gpgun0/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
@@ -99,8 +101,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/gpgun0/leetcode/tree/master/0036-valid-sudoku) |
+| [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
 ## Backtracking
 |  |
 | ------- |
 | [0051-n-queens](https://github.com/gpgun0/leetcode/tree/master/0051-n-queens) |
+| [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
+## Depth-First Search
+|  |
+| ------- |
+| [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
