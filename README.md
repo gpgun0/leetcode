@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0051-n-queens](https://github.com/gpgun0/leetcode/tree/master/0051-n-queens) |
 | [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/gpgun0/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/gpgun0/leetcode/tree/master/0136-single-number) |
 | [0217-contains-duplicate](https://github.com/gpgun0/leetcode/tree/master/0217-contains-duplicate) |
 | [0249-group-shifted-strings](https://github.com/gpgun0/leetcode/tree/master/0249-group-shifted-strings) |
@@ -28,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/gpgun0/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0279-perfect-squares](https://github.com/gpgun0/leetcode/tree/master/0279-perfect-squares) |
 ## String
 |  |
