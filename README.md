@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/gpgun0/leetcode/tree/master/0118-pascals-triangle) |
+| [0279-perfect-squares](https://github.com/gpgun0/leetcode/tree/master/0279-perfect-squares) |
 ## String
 |  |
 | ------- |
@@ -97,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0202-happy-number](https://github.com/gpgun0/leetcode/tree/master/0202-happy-number) |
+| [0279-perfect-squares](https://github.com/gpgun0/leetcode/tree/master/0279-perfect-squares) |
 ## Matrix
 |  |
 | ------- |
@@ -111,4 +113,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0079-word-search](https://github.com/gpgun0/leetcode/tree/master/0079-word-search) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/gpgun0/leetcode/tree/master/0279-perfect-squares) |
 <!---LeetCode Topics End-->
