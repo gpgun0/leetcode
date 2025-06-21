@@ -11,9 +11,7 @@ class Solution:
 
             min_ = 1e9
             
-            for j in range(floor(n**(1/2)), 0, -1):
-                if (i-j*j) < 1:
-                    continue
+            for j in range(1, floor(i**(1/2))+1):
                 min_ = min(min_, dp[i-j*j]+1)
             
             dp[i] = min_
