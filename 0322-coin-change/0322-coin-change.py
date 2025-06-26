@@ -14,6 +14,6 @@ class Solution:
                     dp[i][j] = dp[i-1][j]
                     continue
 
-                dp[i][j] = min(dp[i-1][j-coin] + 1, dp[i][j-coin] + 1, dp[i-1][j])
+                dp[i][j] = min(dp[i][j-coin] + 1, dp[i-1][j])
         
         return dp[-1][-1] if dp[-1][-1] < 1e9 else -1
